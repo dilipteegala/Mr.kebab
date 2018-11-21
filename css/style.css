@@ -1,0 +1,392 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Yrsa', serif;
+}
+
+
+/* EXAMPLE 2 (larger logo) - simply adjust top bottom padding to make logo larger */
+
+.bg-dark {
+    background-color: #343a40!important;
+}
+.navbar-brand>img {
+      padding: 0px 24px;
+    height: 71px;
+    width: 220px;
+    margin: -22px;
+    margin-left: 0px;
+}
+.fontcls li a{
+ color: white;
+}
+.container-flui{
+	margin-top: -20px;
+}
+
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 90vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 90vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out 5s;
+       -moz-transition: 2s all ease-in-out 5s; 
+        -ms-transition: 2s all ease-in-out 5s; 
+         -o-transition: 2s all ease-in-out 5s; 
+            transition: 2s all ease-in-out 5s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out 5s;
+       -moz-transition: 2s all ease-in-out 5s; 
+        -ms-transition: 2s all ease-in-out 5s; 
+         -o-transition: 2s all ease-in-out 5s; 
+            transition: 2s all ease-in-out 5s;    
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .7;
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  background-image: url(https://i.kinja-img.com/gawker-media/image/upload/s--l6rS3nZj--/c_scale,f_auto,fl_progressive,q_80,w_800/vcwkkj2ayw6eez1rbwdt.jpg); 
+}
+.fade-carousel .slides .slide-2 {
+  background-image: url(https://cms.splendidtable.org/sites/default/files/styles/w2000/public/french-fries.jpg?itok=FS-YwUYH);
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url(https://i.pinimg.com/originals/eb/90/e8/eb90e8eac7f6bb55e72d5eb24eb8ae3c.jpg);
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
+}
+
+.ima
+{
+	width: 100%;
+	float: left;
+	background:#000;
+    margin:30px 0px;
+    color:white;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 23px 35px;
+}
+.ima img{
+	height: 255px;
+    width: 290px;
+    padding: 10px 10px;
+}
+
+.ima h4 a{
+	border-style:solid;
+	border-color: white;
+	padding: 0px;
+	color: white;
+}
+
+.tabss{
+	background-color: #a42121;
+	color: red;
+	text-align: center;
+}
+
+.tabs {
+	margin: 10px 0px;
+	text-align: center;
+}
+.tabs input[type=radio] {
+  display: none; 
+}
+.tabs label {
+  transition: background 0.4s ease-in-out, height 0.2s linear;
+  display: inline-block;
+  cursor: pointer;
+  color: #2EBEB9;
+  width: 20%;
+  height: 3em;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background: #FCFCFC;
+  text-align: center;
+  line-height: 3em; 
+}
+.tabs label:last-of-type {
+  border-bottom: none; 
+}
+.tabs label:hover {
+  background: #259692;
+  color:#ffffff;
+}
+@media screen and (max-width: 1600px) {
+.tabs label {
+  width: 15%; } 
+}
+@media screen and (max-width: 900px) {
+.tabs label {
+  width: 20%; 
+  } 
+}
+@media screen and (max-width: 600px) {
+.tabs label {
+  width: 100%;
+  display: block;
+  border-bottom: 2px solid #C7C6C4;
+  border-radius: 0; 
+} 
+}
+@media screen and (max-width: 600px) {
+.tabs {
+  margin: 0; 
+} 
+}
+
+#tab1:checked + label, #tab2:checked + label, #tab3:checked + label, #tab4:checked + label {
+  background: #2EBEB9;
+  color: #FFFFFF; }
+
+.tab-content {
+  position: absolute;
+  top: -9999px;
+  padding: 10px; 
+}
+
+.tab-content-wrapper{
+  background: white;
+  color: red;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 3px;
+
+}
+@media screen and (max-width: 600px)
+{
+.tab-content-wrapper, .tab1-content-wrapper
+ 	{
+	  	border: none;
+  		border-radius: 0; 
+	} 
+}
+
+#tab1:checked ~ .tab-content-wrapper #tab-content-1, #tab2:checked ~ .tab-content-wrapper #tab-content-2, #tab3:checked ~ .tab-content-wrapper #tab-content-3, #tab4:checked ~ .tab-content-wrapper #tab-content-4 {
+  position: relative;
+  top: 0px;
+ }
+
+ col-md-6{
+ 	background: black;
+    color: white
+ }
+ .Gallery{
+ 	padding: 20px;
+ }
+
+ .c{
+ 	padding: 20px 20px;
+ 	background-color: whitesmoke;
+ }
+ .reserv{
+ 	background-color: #d12121f7;
+ 	padding: 10px 20px;
+ 	color: white;
+ }
+/*footer*/
+.footer {
+  background: #282c2f;
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 19px 0 9px 0;
+  border-top: 4px solid #fff;
+}
+.contact_list {
+
+  margin: 16px 0 43px 0;
+  color:#fff;
+
+}
+.copyrighttt {
+
+    float: left;
+    width: 100%;
+}
+.copyright {
+
+    float: left;
+    width: 100%;
+  padding:10px 0px;
+}
+
+
+.copyright p {
+
+  text-align:center;
+    font-size: 14px;
+  margin:0px;
+
+}
+
+.useful-footer h1 {
+
+    color: #fff;
+    font-size: 22px;
+
+border-bottom: 3px solid #fff;
+
+width: 141px;
+
+padding: 0px 0 6px 0;
+
+}
+.useful-footer h2 {
+  color: #fff;
+    font-size:14px;
+}
+
+.useful-footer h2 a{
+  color: #fff;  
+}
+.useful-footer ul {
+
+    margin: 0 auto;
+    padding: 0;
+}
+.useful-footer ul li {
+
+    list-style: outside none none;
+    margin: 0 auto;
+}
+.useful-footer ul li a {
+
+    color: #fff;
+    line-height: 24px;
+    text-decoration: none;
+}
+.useful-footer ul li a:hover {
+    color: #8bc34a !important;
+    margin-left: 10px !important;
+    transition: 0.1s !important;
+    -webkit-transition: 0.9s !important;
+    -moz-transition: 0.9s !important;
+    -o-transition: 0.9s !important;
+}
+
+/*footer*/
+
